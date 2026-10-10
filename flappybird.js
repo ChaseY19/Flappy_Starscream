@@ -68,6 +68,7 @@ window.onload = function () {
     requestAnimationFrame(update);
     setInterval(placePipes, 1500); //every 1.5 seconds
     document.addEventListener("keydown", moveBird);
+    document.addEventListener("click", moveBird); // <--- Única línea agregada para el clic / celular
 };
 
 function update() {
@@ -203,7 +204,6 @@ function placePipes() {
 
 function moveBird(e) {
     if (e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX" || e.type == "click") {
-        document.addEventListener("click", moveBird);
         if (bgm.paused) {
         bgm.play();
         }
