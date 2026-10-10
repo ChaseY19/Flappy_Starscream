@@ -203,6 +203,7 @@ function placePipes() {
 
 function moveBird(e) {
     if (e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX" || e.type == "click") {
+        document.addEventListener("click", moveBird);
         if (bgm.paused) {
         bgm.play();
         }
