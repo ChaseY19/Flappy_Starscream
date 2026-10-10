@@ -1,0 +1,13 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-image: url("./Cybertron.jpg");
+}
+
+#board {
+    /*background-color: skyblue; 
+    background-image: url("./Cybertron.jpg");*/
+    border-color: rgb(14, 6, 61);
+    border-width: 2px;
+    border-style: solid;
+}
